@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon CV</title>
+    <meta name="description" content="Portfolio de mon CV en HTML, CSS et JavaScript" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a href="#home" class="logo">Sokamdoum Fongang Yann</a>
+      <button class="menu-toggle" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="#about">À propos</a>
+        <a href="#experience">Expérience</a>
+        <a href="#education">Éducation</a>
+        <a href="#skills">Compétences</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Développeur Web & Designer</p>
+          <h1>Je conçois des expériences numériques modernes et efficaces.</h1>
+          <p class="hero-text">
+            Je transforme les idées en interfaces élégantes, rapides et orientées utilisateur.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Me contacter</a>
+            <a href="#experience" class="btn btn-secondary">Voir mon parcours</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Résumé rapide</h3>
+          <ul>
+            <li>2 ans d'expérience</li>
+            <li>polyvalent dans plusieurs langages</li>
+            <li>Création de sites responsive</li>
+            <li>Anglais intermédiaire</li>
+            <li>Permis B</li>
+            <li>Motivé et très apprenant</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-title">
+          <p class="eyebrow">Profil</p>
+          <h2>À propos de moi</h2>
+        </div>
+        <div class="about-grid">
+          <p>
+            Passionné par le web, je développe des solutions digitales soignées avec une attention particulière
+            à l'expérience utilisateur, à la performance et à l'esthétique.
+          </p>
+          <p>
+            Mon objectif est de créer des sites modernes, accessibles et adaptés aux besoins des clients et de leurs audiences.
+            Je suis motivé, très apprenant et je dispose d'un niveau d'anglais moyen ainsi que d'un permis B.
+          </p>
+        </div>
+      </section>
+
+      <section id="experience" class="section alt-bg">
+        <div class="section-title">
+          <p class="eyebrow">Expérience</p>
+          <h2>Parcours professionnel</h2>
+        </div>
+        <div class="timeline">
+          <article class="card">
+            <h3>Développeur Front-End</h3>
+            <p class="meta">2024 - 2025 </p>
+            <p>J'ai participe a la creation et hebergement de plusiers projets web.</p>
+          </article>
+          <article class="card">
+            <h3>Web Designer</h3>
+            <p class="meta">2025 - 2026 </p>
+            <p>Travailles sur un projet de design web de rencontres.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <div class="section-title">
+          <p class="eyebrow">Formation</p>
+          <h2>Éducation</h2>
+        </div>
+        <div class="timeline">
+          <article class="card">
+            <h3>Secondaire</h3>
+            <p class="meta">2014 - 2022 · Lycée Bilingue d'Ekounou</p>
+            <p>Obtention du baccalauréat scientifique serie C.</p>
+            <h3>Universitaire</h3>
+            <p class="meta">2022 - 2023 · Université De Yaounde 1</p>
+            <p>Faculte des sciences physique</p>
+            <h3>Universitaire</h3>
+            <p class="meta">2023 - 2024 · Centre de formation professionel</p>
+            <p>Formation en developpement web</p>
+            <h3>Universitaire</h3>
+            <p class="meta">2025 - 2026 · ISTAG</p>
+            <p>Etudes en gestions des systemes d'information</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section alt-bg">
+        <div class="section-title">
+          <p class="eyebrow">Compétences</p>
+          <h2>Ce que je maîtrise</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-item">HTML</div>
+          <div class="skill-item">CSS</div>
+          <div class="skill-item">JavaScript</div>
+          <div class="skill-item">PHP</div>
+          <div class="skill-item">RESEAU</div>
+          <div class="skill-item">C</div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="section-title">
+          <p class="eyebrow">Contact</p>
+          <h2>Travaillons ensemble</h2>
+        </div>
+        <div class="contact-box">
+          <p>Email : yannjunior39@email.com</p>
+          <p>Téléphone : +237 699 047 308</p>
+          <p>Ville : Yaoundé, Cammeroun</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Sokamdoum Fongang Yann. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
