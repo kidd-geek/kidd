@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="topbar">
-      <a href="#home" class="logo">Sokamdoum Fongang Yann</a>
+      <a href="#home" class="logo"><span id="cv-logo-name">Sokamdoum Fongang Yann</span></a>
       <button class="menu-toggle" aria-label="Ouvrir le menu">
         <span></span>
         <span></span>
@@ -34,13 +34,14 @@
       <section class="hero">
         <div class="hero-content">
           <p class="eyebrow">Développeur Web & Designer</p>
-          <h1>Je conçois des expériences numériques modernes et efficaces.</h1>
-          <p class="hero-text">
+          <h1 id="cv-role-heading">Je conçois des expériences numériques modernes et efficaces.</h1>
+          <p id="cv-summary" class="hero-text">
             Je transforme les idées en interfaces élégantes, rapides et orientées utilisateur.
           </p>
           <div class="hero-actions">
             <a href="#contact" class="btn btn-primary">Me contacter</a>
             <a href="#experience" class="btn btn-secondary">Voir mon parcours</a>
+            <a href="#cv-editor" class="btn btn-secondary">Personnaliser mon CV</a>
           </div>
         </div>
         <div class="hero-card">
@@ -56,17 +57,109 @@
         </div>
       </section>
 
+      <section id="cv-editor" class="section">
+        <div class="section-title">
+          <p class="eyebrow">Éditeur</p>
+          <h2>Rendre le CV dynamique</h2>
+        </div>
+        <div class="editor-grid">
+          <form id="cv-form" class="cv-form">
+            <div class="form-grid">
+              <label>
+                Nom complet
+                <input type="text" id="field-name" name="name" />
+              </label>
+              <label>
+                Titre
+                <input type="text" id="field-role" name="role" />
+              </label>
+              <label class="full">
+                Résumé
+                <textarea id="field-summary" name="summary" rows="3"></textarea>
+              </label>
+              <label class="full">
+                À propos 1
+                <textarea id="field-about-1" name="about1" rows="3"></textarea>
+              </label>
+              <label class="full">
+                À propos 2
+                <textarea id="field-about-2" name="about2" rows="3"></textarea>
+              </label>
+              <label>
+                Expérience 1
+                <input type="text" id="field-experience-title-1" name="experienceTitle1" />
+              </label>
+              <label>
+                Date expérience 1
+                <input type="text" id="field-experience-meta-1" name="experienceMeta1" />
+              </label>
+              <label class="full">
+                Description expérience 1
+                <textarea id="field-experience-text-1" name="experienceText1" rows="2"></textarea>
+              </label>
+              <label>
+                Expérience 2
+                <input type="text" id="field-experience-title-2" name="experienceTitle2" />
+              </label>
+              <label>
+                Date expérience 2
+                <input type="text" id="field-experience-meta-2" name="experienceMeta2" />
+              </label>
+              <label class="full">
+                Description expérience 2
+                <textarea id="field-experience-text-2" name="experienceText2" rows="2"></textarea>
+              </label>
+              <label class="full">
+                Formation
+                <textarea id="field-education" name="education" rows="3"></textarea>
+              </label>
+              <label class="full">
+                Compétences (séparées par des virgules)
+                <input type="text" id="field-skills" name="skills" />
+              </label>
+              <label>
+                Email
+                <input type="email" id="field-email" name="email" />
+              </label>
+              <label>
+                Téléphone
+                <input type="text" id="field-phone" name="phone" />
+              </label>
+              <label>
+                Ville
+                <input type="text" id="field-city" name="city" />
+              </label>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Appliquer les changements</button>
+              <button type="reset" class="btn btn-secondary">Réinitialiser</button>
+            </div>
+          </form>
+          <div class="preview-card">
+            <h3>Aperçu rapide</h3>
+            <p class="preview-label">Nom</p>
+            <h4 id="preview-name">Sokamdoum Fongang Yann</h4>
+            <p class="preview-label">Titre</p>
+            <p id="preview-role">Développeur Web & Designer</p>
+            <p class="preview-label">Résumé</p>
+            <p id="preview-summary">Je transforme les idées en interfaces élégantes, rapides et orientées utilisateur.</p>
+            <p class="preview-label">Compétences</p>
+            <div id="preview-skills" class="preview-skills"></div>
+          </div>
+        </div>
+      </section>
+
       <section id="about" class="section">
         <div class="section-title">
           <p class="eyebrow">Profil</p>
           <h2>À propos de moi</h2>
         </div>
         <div class="about-grid">
-          <p>
+          <p id="cv-about-1">
             Passionné par le web, je développe des solutions digitales soignées avec une attention particulière
             à l'expérience utilisateur, à la performance et à l'esthétique.
           </p>
-          <p>
+          <p id="cv-about-2">
             Mon objectif est de créer des sites modernes, accessibles et adaptés aux besoins des clients et de leurs audiences.
             Je suis motivé, très apprenant et je dispose d'un niveau d'anglais moyen ainsi que d'un permis B.
           </p>
@@ -80,14 +173,14 @@
         </div>
         <div class="timeline">
           <article class="card">
-            <h3>Développeur Front-End</h3>
-            <p class="meta">2024 - 2025 </p>
-            <p>J'ai participe a la creation et hebergement de plusiers projets web.</p>
+            <h3 id="cv-experience-title-1">Développeur Front-End</h3>
+            <p class="meta" id="cv-experience-meta-1">2024 - 2025 </p>
+            <p id="cv-experience-text-1">J'ai participe a la creation et hebergement de plusiers projets web.</p>
           </article>
           <article class="card">
-            <h3>Web Designer</h3>
-            <p class="meta">2025 - 2026 </p>
-            <p>Travailles sur un projet de design web de rencontres.</p>
+            <h3 id="cv-experience-title-2">Web Designer</h3>
+            <p class="meta" id="cv-experience-meta-2">2025 - 2026 </p>
+            <p id="cv-experience-text-2">Travailles sur un projet de design web de rencontres.</p>
           </article>
         </div>
       </section>
@@ -110,7 +203,7 @@
             <p>Formation en developpement web</p>
             <h3>Universitaire</h3>
             <p class="meta">2025 - 2026 · ISTAG</p>
-            <p>Etudes en gestions des systemes d'information</p>
+            <p id="cv-education">Etudes en gestions des systemes d'information</p>
           </article>
         </div>
       </section>
@@ -120,7 +213,7 @@
           <p class="eyebrow">Compétences</p>
           <h2>Ce que je maîtrise</h2>
         </div>
-        <div class="skills-grid">
+        <div id="skills-grid" class="skills-grid">
           <div class="skill-item">HTML</div>
           <div class="skill-item">CSS</div>
           <div class="skill-item">JavaScript</div>
@@ -136,9 +229,9 @@
           <h2>Travaillons ensemble</h2>
         </div>
         <div class="contact-box">
-          <p>Email : yannjunior39@email.com</p>
-          <p>Téléphone : +237 699 047 308</p>
-          <p>Ville : Yaoundé, Cammeroun</p>
+          <p id="cv-email">Email : yannjunior39@email.com</p>
+          <p id="cv-phone">Téléphone : +237 699 047 308</p>
+          <p id="cv-city">Ville : Yaoundé, Cammeroun</p>
         </div>
       </section>
     </main>
