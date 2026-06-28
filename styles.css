@@ -213,6 +213,81 @@ footer {
   border-top: 1px solid var(--border);
 }
 
+.editor-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.cv-form,
+.preview-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.cv-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.cv-form .full {
+  grid-column: 1 / -1;
+}
+
+.cv-form input,
+.cv-form textarea {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.7rem 0.8rem;
+  font: inherit;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.preview-card h3 {
+  margin-bottom: 0.8rem;
+}
+
+.preview-label {
+  color: var(--accent);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin-top: 0.7rem;
+  margin-bottom: 0.25rem;
+}
+
+.preview-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.preview-skills .skill-item {
+  padding: 0.45rem 0.7rem;
+  font-size: 0.9rem;
+}
+
 @media (max-width: 768px) {
   .topbar {
     padding: 1rem 1rem;
@@ -240,7 +315,9 @@ footer {
   }
 
   .hero,
-  .about-grid {
+  .about-grid,
+  .editor-grid,
+  .form-grid {
     grid-template-columns: 1fr;
   }
 
